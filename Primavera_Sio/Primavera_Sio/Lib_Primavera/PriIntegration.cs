@@ -28,7 +28,7 @@ namespace Primavera_Sio.Lib_Primavera
 
             List<Primavera_Sio.Lib_Primavera.Model.Cliente> listClientes = new List<Primavera_Sio.Lib_Primavera.Model.Cliente>();
 
-            if (PriEngine.InitializeCompany("A01", "", "") == true)
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
             {
 
                 //objList = PriEngine.Engine.Comercial.Clientes.LstClientes();
@@ -62,7 +62,7 @@ namespace Primavera_Sio.Lib_Primavera
             StdBELista objList = null;
 
 
-            if (PriEngine.InitializeCompany("A01", "", "") == true)
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
             {
                 //verificar se utilizador ja existe
                 objList = PriEngine.Engine.Consulta("Select cliente From Clientes Where cliente ='" + cliente.NomeCliente + "'");
@@ -100,7 +100,7 @@ namespace Primavera_Sio.Lib_Primavera
             StdBELista objList = null;
 
 
-            if (PriEngine.InitializeCompany("A01", "", "") == true)
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
             {
                 objList = PriEngine.Engine.Consulta("Select * From (Select cliente, convert(nvarchar(max),notas) asnotas From clientes)a where a.asnotas='" + cliente.Password + "' and a.cliente='" + cliente.UserName + "'");
 
@@ -303,6 +303,50 @@ namespace Primavera_Sio.Lib_Primavera
 
 
         #endregion Cliente;   // -----------------------------  END   CLIENTE    -----------------------
+
+        public static List<Model.Artigo> ListaArtigos()
+        {
+            ErpBS objMotor = new ErpBS();
+            //MotorPrimavera mp = new MotorPrimavera();
+            StdBELista objList;
+
+            Model.Artigo art = new Model.Artigo();
+            List<Model.Artigo> listArts = new List<Model.Artigo>();
+
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
+            {
+
+                //objList = PriEngine.Engine.Comercial.Artigos.LstArtigos();
+                objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo");
+
+                while (!objList.NoFim())
+                {
+                    art = new Model.Artigo();
+                    if (objList.Valor("stkactual") > 0)
+                    {
+                        art.CodArtigo = objList.Valor("artigo");
+                        art.DescArtigo = objList.Valor("descricao");
+                        art.categoria = objList.Valor("unidadebase");
+                        art.Quantidade = objList.Valor("stkactual");
+                        art.marca = objList.Valor("DataUltimaActualizacao");
+                        art.Preco = objList.Valor("IVA");
+
+                        listArts.Add(art);
+
+                    }
+                    objList.Seguinte();
+                }
+
+                return listArts;
+
+            }
+            else
+            {
+                return null;
+
+            }
+
+        }
     }
 
 }
