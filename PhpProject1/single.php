@@ -1,9 +1,7 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+require_once './Manager/getData.php';
+$manager=new getData();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <div class="container">
 			 <div class="header">
 			       <div class="logo">
-						 <a href="index.html"><img src="images/logo.png" alt=""/></a>
+						 <a href="indexRegistado.php"><img src="images/logo.png" alt=""/></a>
 				   </div>							 
 				  <div class="top-nav">										 
 						<label class="mobile_menu" for="mobile_menu">
@@ -56,11 +54,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</label>
 						<input id="mobile_menu" type="checkbox">
 					   <ul class="nav">
-						  <li class="dropdown1"><a href="bicycles.html">BICYCLES</a>
+						  <li class="dropdown1"><a href="bicycles.php">BICYCLES</a>
 							  <ul class="dropdown2">
-									<li><a href="bicycles.html">FIXED / SINGLE SPEED</a></li>
-									<li><a href="bicycles.html">CITY BIKES</a></li>
-									<li><a href="bicycles.html">PREMIMUN SERIES</a></li>												
+									<li><a href="bicycles.php">FIXED / SINGLE SPEED</a></li>
+									<li><a href="bicycles.php">CITY BIKES</a></li>
+									<li><a href="bicycles.php">PREMIMUN SERIES</a></li>												
 							  </ul>
 						  </li>
 						  <li class="dropdown1"><a href="parts.html">PARTS</a>
@@ -100,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="content-bar">
 				 <div class="single-page">
 					 <div class="product-head">
-						<a href="index.html">Home</a> <span>::</span>	
+						<a href="indexRegistado.php">Home</a> <span>::</span>	
 						</div>
 					 <!--Include the Etalage files-->
 						<link rel="stylesheet" href="css/etalage.css">
@@ -122,6 +120,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 						<!--//details-product-slider-->
+                                                <?php 
+                $arrays=$manager->getartigo(filter_input(INPUT_GET,'cod' ,FILTER_SANITIZE_SPECIAL_CHARS));
+                $marca=$arrays['Marca'];
+                $preco=$arrays['preco'];
+//              foreach ($arrays as $key => $value) {
+//                  
+//              }
+?>
 					 <div class="details-left-slider">
 						 <div class="grid images_3_of_2">
 						  <ul id="etalage">
@@ -146,11 +152,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 						</div>
 					 </div>
+                                                
 					 <div class="details-left-info">
-							<h3>SCOTT SPARK</h3>
-								<h4>Model No: 3498</h4>
+							<h3><?php print_r($marca);?></h3>
+								<h4></h4>
 							<h4></h4>
-							<p><label>$</label> 300 <a href="#">Click for offer</a></p>
+							<p><label></label><?php print_r($preco);echo '€'?> <a href="#">Click for offer</a></p>
 							<p class="size">SIZE ::</p>
 							<a class="length" href="#">XS</a>
 							<a class="length" href="#">M</a>
@@ -161,11 +168,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="bike-type">
 							<p>TYPE  ::<a href="#">MOUNTAIN BIKE</a></p>
-							<p>BRAND  ::<a href="#">SPORTS SCOTTY</a></p>
+							<p>BRAND  ::<a href="#"><?php print_r($marca);?></a></p>
 							</div>
 							<h5>Description  ::</h5>
 							<p class="desc">The first mechanically-propelled, two-wheeled vehicle may have been built by Kirkpatrick MacMillan, a Scottish blacksmith, in 1839, although the claim is often disputed. He is also associated with the first recorded instance of a cycling traffic offense, when a Glasgow newspaper in 1842 reported an accident in which an anonymous "gentleman from Dumfries-shire... bestride a velocipede... of ingenious design" knocked over a little girl in Glasgow and was fined five
-							The word bicycle first appeared in English print in The Daily News in 1868, to describe "Bysicles and trysicles" on the "Champs Elysées and Bois de Boulogne.</p>
+							The word bicycle first appeared in English print in The Daily News in 1868, to describe "Bycicles and trysicles" on the "Champs Elysées and Bois de Boulogne.</p>
 					 </div>
 					 <div class="clearfix"></div>				 	
 				  </div>
@@ -179,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s1.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Road Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Road Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
@@ -196,7 +203,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s2.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Mountain Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Mountain Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
@@ -213,7 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <img src="images/s3.jpg" class="img-responsive " alt=""/>
 						 </div>
 						 <div class="prod1-desc">
-								<h5><a class="product_link" href="bicycles.html">Single Speed Bike</a></h5>
+								<h5><a class="product_link" href="bicycles.php">Single Speed Bike</a></h5>
 								<p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>									
 						 </div>
 						 <div class="clearfix"></div>
@@ -231,11 +238,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 	 <div class="container wrap">
 		<div class="logo2">
-			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
+			 <a href="indexRegistado.php"><img src="images/logo2.png" alt=""/></a>
 		</div>
 		<div class="ftr-menu">
 			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
+				 <li><a href="bicycles.php">BICYCLES</a></li>
 				 <li><a href="parts.html">PARTS</a></li>
 				 <li><a href="accessories.html">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
