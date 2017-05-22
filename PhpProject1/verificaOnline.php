@@ -22,6 +22,6 @@ if(ini_get("session.use_cookies")){
 }
 
 session_destroy();
-header('Location: error.php?descricaoErro=WebServices%20Offline');
+header('Location: 404.html');
 die();
 }
