@@ -1,3 +1,4 @@
+C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\ApplicationInsights.config
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\roslyn\csc.exe
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\roslyn\csc.exe.config
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\roslyn\csc.rsp
@@ -28,11 +29,6 @@ C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Bike.
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Bike.dll
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Bike.pdb
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.csprojResolveAssemblyReference.cache
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.dll
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.pdb
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\ApplicationInsights.config
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Primavera_Sio.dll
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.Optimization.dll
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.Mvc.dll
@@ -47,6 +43,7 @@ C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Syste
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.WebPages.Deployment.dll
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Primavera_Sio.pdb
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Primavera_Sio.dll.config
+C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.Optimization.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.Mvc.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.Http.xml
@@ -57,3 +54,6 @@ C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\Syste
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.WebPages.Razor.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.WebPages.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.csprojResolveAssemblyReference.cache
+C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.dll
+C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Bike\obj\Debug\Bike.pdb

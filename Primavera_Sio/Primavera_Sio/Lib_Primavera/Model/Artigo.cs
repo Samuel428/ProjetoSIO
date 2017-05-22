@@ -19,7 +19,7 @@ namespace Primavera_Sio.Lib_Primavera.Model
             set;
         }
 
-        public string Preco
+        public string UnidadeBase
         {
             get;
             set;
@@ -31,13 +31,23 @@ namespace Primavera_Sio.Lib_Primavera.Model
             set;
         }
 
-        public string marca
+        public DateTime DataCriacao
         {
             get;
             set;
         }
 
-       
-        public string categoria { get; set; }
+        public string Iva
+        {
+            get;
+            set;
+        }
+
+        public string UnidadeVenda { get; set; }
+        public string MovStock { get; set; }
+        public string ArmazemSugestao { get; set; }
+        public string preco { get; set; }
+        public string Marca { get; set; }
+        public string imagem { get; set; }
     }
 }

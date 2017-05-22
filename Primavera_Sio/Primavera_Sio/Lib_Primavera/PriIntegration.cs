@@ -9,6 +9,10 @@ using Interop.GcpBE800;
 using ADODB;
 using Interop.IGcpBS800;
 using Primavera_Sio.Lib_Primavera;
+using Primavera_Sio.Lib_Primavera.Model;
+using Interop.StdPlatBE800;
+using Interop.ICrmBS800;
+using Interop.CrmBE800;
 //using Interop.StdBESql800;
 //using Interop.StdBSSql800;
 
@@ -55,6 +59,8 @@ namespace Primavera_Sio.Lib_Primavera
             else
                 return null;
         }
+
+       
 
         public static int RegistarUser(Lib_Primavera.Model.Cliente cliente)
         {
@@ -304,7 +310,7 @@ namespace Primavera_Sio.Lib_Primavera
 
         #endregion Cliente;   // -----------------------------  END   CLIENTE    -----------------------
 
-        public static List<Model.Artigo> ListaArtigos()
+        public static List<Model.Artigo> ListaArtigosBikeMontanha()
         {
             ErpBS objMotor = new ErpBS();
             //MotorPrimavera mp = new MotorPrimavera();
@@ -317,23 +323,27 @@ namespace Primavera_Sio.Lib_Primavera
             {
 
                 //objList = PriEngine.Engine.Comercial.Artigos.LstArtigos();
-                objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo");
+                objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where TipoArtigo=30");
 
                 while (!objList.NoFim())
                 {
                     art = new Model.Artigo();
-                    if (objList.Valor("stkactual") > 0)
-                    {
+                    //if (objList.Valor("stkactual") > 0)
+                    //{
                         art.CodArtigo = objList.Valor("artigo");
                         art.DescArtigo = objList.Valor("descricao");
-                        art.categoria = objList.Valor("unidadebase");
+                        art.UnidadeBase = objList.Valor("unidadebase");
                         art.Quantidade = objList.Valor("stkactual");
-                        art.marca = objList.Valor("DataUltimaActualizacao");
-                        art.Preco = objList.Valor("IVA");
+                        art.DataCriacao = objList.Valor("DataUltimaActualizacao");
+                        art.Iva = objList.Valor("IVA");
+                        art.Marca = objList.Valor("Marca");
+                        art.imagem = objList.Valor("imagem");
+                    art.preco = Convert.ToString(PriEngine.Engine.Consulta("SELECT PVP1 FROM ARTIGOMOEDA WHERE Artigo =" + "'" + art.CodArtigo + "'").Valor("PVP1"));
+
 
                         listArts.Add(art);
 
-                    }
+                    //}
                     objList.Seguinte();
                 }
 
@@ -347,6 +357,170 @@ namespace Primavera_Sio.Lib_Primavera
             }
 
         }
+        public static List<Model.Artigo> ListaArtigosBikeSingleSpeed(int idTipoArtigo)
+        {
+            ErpBS objMotor = new ErpBS();
+            //MotorPrimavera mp = new MotorPrimavera();
+            StdBELista objList;
+
+            Model.Artigo art = new Model.Artigo();
+            List<Model.Artigo> listArts = new List<Model.Artigo>();
+
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
+            {
+
+                //objList = PriEngine.Engine.Comercial.Artigos.LstArtigos();
+               // objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where TipoArtigo=31");
+                 objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where TipoArtigo="+"'"+idTipoArtigo.ToString()+"'");
+                while (!objList.NoFim())
+                {
+                    art = new Model.Artigo();
+                    art.CodArtigo = objList.Valor("artigo");
+                    art.DescArtigo = objList.Valor("descricao");
+                    art.UnidadeBase = objList.Valor("unidadebase");
+                    art.Quantidade = objList.Valor("stkactual");
+                    art.DataCriacao = objList.Valor("DataUltimaActualizacao");
+                    art.Iva = objList.Valor("IVA");
+                    art.Marca = objList.Valor("Marca");
+                    art.imagem = objList.Valor("imagem");
+                    art.preco = Convert.ToString(PriEngine.Engine.Consulta("SELECT PVP1 FROM ARTIGOMOEDA WHERE Artigo =" + "'" + art.CodArtigo + "'").Valor("PVP1"));
+
+
+                    listArts.Add(art);
+
+                   
+                    objList.Seguinte();
+                }
+
+                return listArts;
+
+            }
+            else
+            {
+                return null;
+
+            }
+
+        }
+
+        public static List<Model.Artigo> ListaBikes(string tipo)
+        {
+            ErpBS objMotor = new ErpBS();
+            //MotorPrimavera mp = new MotorPrimavera();
+            StdBELista objList;
+
+            Model.Artigo art = new Model.Artigo();
+            List<Model.Artigo> listArts = new List<Model.Artigo>();
+
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
+            {
+
+                //objList = PriEngine.Engine.Comercial.Artigos.LstArtigos();
+                // objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where TipoArtigo=31");
+                objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where Familia=" + "'" + tipo + "'");
+                while (!objList.NoFim())
+                {
+                    art = new Model.Artigo();
+                    art.CodArtigo = objList.Valor("artigo");
+                    art.DescArtigo = objList.Valor("descricao");
+                    art.UnidadeBase = objList.Valor("unidadebase");
+                    art.Quantidade = objList.Valor("stkactual");
+                    art.DataCriacao = objList.Valor("DataUltimaActualizacao");
+                    art.Iva = objList.Valor("IVA");
+                    art.Marca = objList.Valor("Marca");
+                    art.imagem = objList.Valor("imagem");
+                    art.preco = Convert.ToString(PriEngine.Engine.Consulta("SELECT PVP1 FROM ARTIGOMOEDA WHERE Artigo =" + "'" + art.CodArtigo + "'").Valor("PVP1"));
+
+
+                    listArts.Add(art);
+
+
+                    objList.Seguinte();
+                }
+
+                return listArts;
+
+            }
+            else
+            {
+                return null;
+
+            }
+
+        }
+
+        public static Artigo GetBike(string idArtigo)
+        {
+            ErpBS objMotor = new ErpBS();
+            //MotorPrimavera mp = new MotorPrimavera();
+            StdBELista objList;
+
+            Model.Artigo art = new Model.Artigo();
+
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
+            {
+
+                //objList = PriEngine.Engine.Comercial.Artigos.LstArtigos();
+                // objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where TipoArtigo=31");
+                objList = PriEngine.Engine.Consulta("SELECT * FROM  Artigo where Artigo=" + "'" + idArtigo + "'");
+                while (!objList.NoFim())
+                {
+                    art = new Model.Artigo();
+                    art.CodArtigo = objList.Valor("artigo");
+                    art.DescArtigo = objList.Valor("descricao");
+                    art.UnidadeBase = objList.Valor("unidadebase");
+                    art.Quantidade = objList.Valor("stkactual");
+                    art.DataCriacao = objList.Valor("DataUltimaActualizacao");
+                    art.Iva = objList.Valor("IVA");
+                    art.Marca = objList.Valor("Marca");
+                    art.imagem = objList.Valor("imagem");
+                    art.preco = Convert.ToString(PriEngine.Engine.Consulta("SELECT PVP1 FROM ARTIGOMOEDA WHERE Artigo =" + "'" + art.CodArtigo + "'").Valor("PVP1"));
+
+                    
+
+                    objList.Seguinte();
+                }
+
+                return art;
+
+            }
+            else
+            {
+                return null;
+
+            }
+        }
+
+        public static int enviarForm(ContactForm contact)
+        {
+            Lib_Primavera.Model.RespostaErro erro = new Model.RespostaErro();
+            StdBELista objList = null;
+
+
+            if (PriEngine.InitializeCompany("A01", "Samuel", "123") == true)
+            {
+
+                CrmBEContacto c = new CrmBEContacto();
+                Guid guid = Guid.NewGuid();
+                string str = guid.ToString();
+                contact.id = str;
+                c.set_PrimeiroNome(contact.primeironome);
+                c.set_UltimoNome(contact.ultimonome);
+                c.set_Email(contact.email);
+                c.set_Notas(contact.mensagem);
+                c.set_ID(contact.id);
+                c.set_Contacto(contact.primeironome);
+                PriEngine.Engine.CRM.Contactos.Actualiza(c);
+
+                return 1;
+                
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
     }
 
 }
