@@ -45,7 +45,7 @@ $response = json_decode($json_response, true);
     header("location:index.php");
     
 }else if($response === "jaexiste"){
-    header("location:Error.php?descricaoErro=Jรก%20Existe");
+    header("location:404.html");
 } else {
-             header("location:Error.php?descricaoErro=Ocorreu%20um%20Erro");
+             header("location:location:404.html");
 }

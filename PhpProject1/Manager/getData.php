@@ -18,6 +18,7 @@ class getData {
     const primavera_web_api_Artigo31 = "http://localhost:49627/api/Artigo?idTipoArtigo=31";
     const primavera_web_api_Artigo32 = "http://localhost:49627/api/Artigo?idTipoArtigo=32";
     const primavera_web_api_artigoid = "http://localhost:49627/api/Artigo?idArtigo=";
+    const primavera_web_api_acessorios = "http://localhost:49627/api/Artigo?acessorio=";
     const primavera_web_api_Bicicleta = "http://localhost:49627/api/Artigo?tipo=Bicicleta";
     const primavera_web_api_Registar = "http://localhost:49627/api/registar";
     const primavera_web_api_Contact = "http://localhost:49627/api/ContactForm";
@@ -103,6 +104,17 @@ class getData {
         } else {
             echo "<script> alert('Falha no registo!');history.back();</script>";
             //header("location:index.php");
+        }
+    }
+    public function getacessorios($acessorio) {
+        $string = file_get_contents(self::primavera_web_api_acessorios.$acessorio);
+        if ($string == null || $string == FALSE) {
+            echo 'erro';
+            ?>
+            <?php
+
+        } else {
+            return $json_a = json_decode($string, true);
         }
     }
 

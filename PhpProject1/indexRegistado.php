@@ -87,11 +87,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <ul class="dropdown2">												
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="bicycles.html">BICYCLES</a>
+						  <li class="dropdown1"><a href="bicycles.php">BICYCLES</a>
 							  <ul class="dropdown2">
-									<li><a href="bicycles.html">FIXED / SINGLE SPEED</a></li>
-									<li><a href="bicycles.html">CITY BIKES</a></li>
-									<li><a href="bicycles.html">PREMIMUN SERIES</a></li>												
+									<li><a href="bicycles.php">FIXED / SINGLE SPEED</a></li>
+									<li><a href="bicycles.php">CITY BIKES</a></li>
+									<li><a href="bicycles.php">PREMIMUN SERIES</a></li>												
 							  </ul>
 						  </li>
 						  <li class="dropdown1"><a href="parts.html">PARTS</a>
@@ -102,12 +102,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="parts.html">DISC BREAKS</a></li>
 							  </ul>
 						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
+						 <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
 							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
+									<li><a href="accessories.php">LOCKS</a></li>
+										<li><a href="accessories.php">HELMETS</a></li>
+										<li><a href="accessories.php">ARM COVERS</a></li>
+										<li><a href="accessories.php">JERSEYS</a></li>
 							  </ul>
 						 </li>               
 						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
@@ -117,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="404.html">TRUCK GRIP</a></li>
 							  </ul>
 						 </li>
-						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
+						  <a class="shop" href="cart.php"><img src="images/cart.png" alt=""/></a>
 					  </ul>
 				 </div>
 				 <div class="clearfix"></div>
@@ -132,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><h1>MOUINTAIN BICYCLE</h1></li>	
 						  </ul>
 						  <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts</span></p>
-						  <a class="morebtn" href="bicycles.html">SHOP BIKES</a>
+						  <a class="morebtn" href="bicycles.php">SHOP BIKES</a>
 					  </div>
 				  </div>
 	 </div>
@@ -145,20 +145,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="container">
 		 <h3>CATEGORIES</h3>
 		 <div class="categorie-grids">
-			 <a href="bicycles.html"><div class="col-md-4 cate-grid grid1">
+			 <a href="bicycles.php"><div class="col-md-4 cate-grid grid1">
 				 <h4>FIXED / SINGLE SPEED</h4>
 				 <p>Are you ready for the 27.5 Revloution ?</p>
-				 <a class="store" href="bicycles.html">GO TO STORE</a>
+				 <a class="store" href="bicycles.php">GO TO STORE</a>
 			 </div></a>
-			 <a href="bicycles.html"><div class="col-md-4 cate-grid grid2">
+			 <a href="bicycles.php"><div class="col-md-4 cate-grid grid2">
 				 <h4>PREMIMUM SERIES</h4>
 				 <p>Exclusive Bike Components</p>
-				 <a class="store" href="bicycles.html">GO TO STORE</a>
+				 <a class="store" href="bicycles.php">GO TO STORE</a>
 			 </div></a>
-			 <a href="bicycles.html"><div class="col-md-4 cate-grid grid3">
+			 <a href="bicycles.php"><div class="col-md-4 cate-grid grid3">
 				 <h4>CITY BIKES</h4>
 				 <p>Street Playground</p>
-				 <a class="store" href="bicycles.html">GO TO STORE</a>
+				 <a class="store" href="bicycles.php">GO TO STORE</a>
 			 </div></a>
 			 <div class="clearfix"></div>
 		 </div>
@@ -182,12 +182,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 				 <li>
@@ -203,12 +203,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 				 <li>
@@ -224,12 +224,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 				 <li>
@@ -245,12 +245,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 				 <li>
@@ -266,12 +266,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 				 <li>
@@ -287,12 +287,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <option value="opel">Option</option>
 							  <option value="audi">Option</option>
 							 </select>
-							 <a href="bicycles.html">BUY</a>
+							 <a href="bicycles.php">BUY</a>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
 					 <div class="viw">
-						<a href="bicycles.html">Quick View</a>
+						<a href="bicycles.php">Quick View</a>
 					 </div>
 				 </li>
 		    </ul>
@@ -343,13 +343,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 	 <div class="container wrap">
 		<div class="logo2">
-			 <a href="indexRegistado.php.html"><img src="images/logo2.png" alt=""/></a>
+			 <a href="indexRegistado.php"><img src="images/logo2.png" alt=""/></a>
 		</div>
 		<div class="ftr-menu">
 			 <ul>
-				 <li><a href="bicycles.html">BICYCLES</a></li>
+				 <li><a href="bicycles.php">BICYCLES</a></li>
 				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
+				 <li><a href="accessories.php">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
 			 </ul>
 		</div>

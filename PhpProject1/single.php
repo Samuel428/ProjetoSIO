@@ -69,12 +69,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="parts.html">DISC BREAKS</a></li>
 							  </ul>
 						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">ACCESSORIES</a>
+						 <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
 							 <ul class="dropdown2">
-									<li><a href="accessories.html">LOCKS</a></li>
-										<li><a href="accessories.html">HELMETS</a></li>
-										<li><a href="accessories.html">ARM COVERS</a></li>
-										<li><a href="accessories.html">JERSEYS</a></li>
+									<li><a href="accessories.php">LOCKS</a></li>
+										<li><a href="accessories.php">HELMETS</a></li>
+										<li><a href="accessories.php">ARM COVERS</a></li>
+										<li><a href="accessories.php">JERSEYS</a></li>
 							  </ul>
 						 </li>               
 						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="404.html">TRUCK GRIP</a></li>
 							  </ul>
 						 </li>
-						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
+						  <a class="shop" href="cart.php"><img src="images/cart.png" alt=""/></a>
 					  </ul>
 				 </div>
 				 <div class="clearfix"></div>
@@ -163,8 +163,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="length" href="#">M</a>
 							<a class="length" href="#">S</a>
 							<div class="btn_form">
-								<a href="cart.html">buy now</a>
-								<a href="cart.html">ADD TO CART</a>
+								<a href="cart.php">buy now</a>
+								<a href="cart.php">ADD TO CART</a>
 							</div>
 							<div class="bike-type">
 							<p>TYPE  ::<a href="#">MOUNTAIN BIKE</a></p>
@@ -193,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$300.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 						<div class="clearfix"></div>
 			 </div>
@@ -210,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$1500.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 				  <div class="clearfix"></div>
 			 </div>
@@ -227,7 +227,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 </div>
 					 <div class="product_price">
 							<span class="price-access">$800.51</span>								
-							<a class="button1" href="cart.html"><span>Add to cart</span></a>
+							<a class="button1" href="cart.php"><span>Add to cart</span></a>
 					 </div>
 				 <div class="clearfix"></div>
 			  </div>
@@ -244,7 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <ul>
 				 <li><a href="bicycles.php">BICYCLES</a></li>
 				 <li><a href="parts.html">PARTS</a></li>
-				 <li><a href="accessories.html">ACCESSORIES</a></li>
+				 <li><a href="accessories.php">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
 			 </ul>
 		</div>
