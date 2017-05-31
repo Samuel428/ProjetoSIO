@@ -70,4 +70,3 @@ C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Primavera_Sio\
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Primavera_Sio\bin\Microsoft.AI.Web.xml
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Primavera_Sio\obj\Debug\Primavera_Sio.dll
 C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Primavera_Sio\obj\Debug\Primavera_Sio.pdb
-C:\Users\sige\documents\visual studio 2017\Projects\Primavera_Sio\Primavera_Sio\obj\Debug\Primavera_Sio.csprojResolveAssemblyReference.cache

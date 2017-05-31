@@ -63,12 +63,12 @@ error_reporting( error_reporting() & ~E_NOTICE );
                                     <li><a href="bicycles.php">PREMIMUN SERIES</a></li>												
                                 </ul>
                             </li>
-                            <li class="dropdown1"><a href="parts.html">PARTS</a>
+                            <li class="dropdown1"><a href="suasCompras.php">Área Cliente</a>
                                 <ul class="dropdown2">
-                                    <li><a href="parts.html">CHAINS</a></li>
-                                    <li><a href="parts.html">TUBES</a></li>
-                                    <li><a href="parts.html">TIRES</a></li>
-                                    <li><a href="parts.html">DISC BREAKS</a></li>
+                                    <li><a href="suasCompras.php">CHAINS</a></li>
+                                    <li><a href="suasCompras.php">TUBES</a></li>
+                                    <li><a href="suasCompras.php">TIRES</a></li>
+                                    <li><a href="suasCompras.php">DISC BREAKS</a></li>
                                 </ul>
                             </li>      
                             <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
@@ -178,14 +178,18 @@ error_reporting( error_reporting() & ~E_NOTICE );
                         foreach ($_SESSION["cart_products"] as $cart_itm) {
                             $precos+=$cart_itm["product_price"];
                             
-                   }}
-                    print_r($precos);   
+                   } print_r($precos);  ?>
+                    </span>
+                    <div class="clearfix"></div>
+                    <a class="order" href="pagamento.php">Place Order</a>
+                   
+                   <?php
+                        }
+                    
                      ?>       
                             
                             
-                    </span>
-                    <div class="clearfix"></div>
-                    <a class="order" href="#">Place Order</a>
+                   
                     <!--			 <div class="total-item">
                                                      <h3>OPTIONS</h3>
                                                      <h4>COUPONS</h4>
@@ -204,7 +208,7 @@ error_reporting( error_reporting() & ~E_NOTICE );
                 <div class="ftr-menu">
                     <ul>
                         <li><a href="bicycles.php">BICYCLES</a></li>
-                        <li><a href="parts.html">PARTS</a></li>
+                        <li><a href="suasCompras.php">Área Cliente</a></li>
                         <li><a href="accessories.php">ACCESSORIES</a></li>
                         <li><a href="404.html">EXTRAS</a></li>
                     </ul>

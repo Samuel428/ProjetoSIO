@@ -88,12 +88,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="bicycles.php">PREMIUM SERIES</a></li>												
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
+						  <li class="dropdown1"><a href="suasCompras.php">Área Cliente</a>
 							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
+									<li><a href="suasCompras.php">CHAINS</a></li>
+									<li><a href="suasCompras.php">TUBES</a></li>
+									<li><a href="suasCompras.php">TIRES</a></li>
+									<li><a href="suasCompras.php">DISC BREAKS</a></li>
 							  </ul>
 						 </li>      
 						 <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
@@ -103,14 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="accessories.php">ARM COVERS</a></li>
 										<li><a href="accessories.php">JERSEYS</a></li>
 							  </ul>
-						 </li>               
-						 <li class="dropdown1"><a href="404.html">EXTRAS</a>
-							 <ul class="dropdown2">
-									<li><a href="404.html">CLASSIC BELL</a></li>
-									<li><a href="404.html">BOTTLE CAGE</a></li>
-									<li><a href="404.html">TRUCK GRIP</a></li>
-							  </ul>
-						 </li>
+						 </li>  
 						  <a class="shop" href="cart.php"><img src="images/cart.png" alt=""/></a>
 					  </ul>
 				 </div>
@@ -125,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><h1>SPEED BICYCLE</h1></li>	
 								<li><h1>MOUINTAIN BICYCLE</h1></li>	
 						  </ul>
-						  <p>You <span>create</span> the <span>journey,</span> we supply the <span>parts</span></p>
+						  <p>You <span>create</span> the <span>journey,</span> we supply the <span>Área Cliente</span></p>
 						  <a class="morebtn" href="bicycles.php">SHOP BIKES</a>
 					  </div>
 				  </div>
@@ -163,28 +156,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <h3>POPULAR BIKES</h3>
 		 <div class="bikes-grids">			 
 			 <ul id="flexiselDemo1">
-<!--				 <li>
-					 <img src="images/bik1.jpg" alt=""/>
-					 <div class="bike-info">
-						 <div class="model">
-							 <h4>FIXED GEAR<span>$249.00</span></h4>							 
-						 </div>
-						 <div class="model-info">
-						     <select>
-							  <option value="volvo">OPTION</option>
-							  <option value="saab">Option</option>
-							  <option value="opel">Option</option>
-							  <option value="audi">Option</option>
-							 </select>
-                                                     <a href="bicycles.php">BUY</a>
-						 </div>						 
-						 <div class="clearfix"></div>
-					 </div>
-					 <div class="viw">
-                                             <a href="bicycles.php">Quick View</a>
-					 </div>
-				 </li>-->
-                                 
+
                                   <?php 
                 $arrays=$manager->getBikes();
               foreach ($arrays as $key => $value) {?>
@@ -195,13 +167,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <h4><?php print_r($arrays[$key]['Marca']);?><span><?php print_r($arrays[$key]['preco']);echo "€";?></span></h4>							 
 						 </div>
 						 <div class="model-info">
-<!--						     <select>
-							  <option value="volvo">OPTION</option>
-							  <option value="saab">Option</option>
-							  <option value="opel">Option</option>
-							  <option value="audi">Option</option>
-							 </select>-->
-                                                     <a href="bicycles.php">BUY</a>
+					     <form action="cartUpdate.php" method="post">
+							<div class="btn_form">
+                                                            <input type="hidden" name="type" value="add"/>
+                         <input type="hidden" name="product_qty" value="1"/>
+                                                            <input type="hidden" name="cod" value="<?=$arrays[$key]['CodArtigo'] ?>"/>
+                                                                <button type="submit"><a href="cartUpdate.php?cod=<?=$arrays[$key]['CodArtigo'] ?>">BUY</a></button>
+							</div></form>
 						 </div>						 
 						 <div class="clearfix"></div>
 					 </div>
@@ -372,7 +344,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="ftr-menu">
 			 <ul>
 				 <li><a href="bicycles.php">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
+				 <li><a href="suasCompras.php">Área Cliente</a></li>
 				 <li><a href="accessories.php">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
 			 </ul>

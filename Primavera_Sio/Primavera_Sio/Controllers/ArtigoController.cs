@@ -30,5 +30,9 @@ namespace Primavera_Sio.Controllers
         {
             return Lib_Primavera.PriIntegration.ListaBikes(tipo);
         }
+        public IEnumerable<Lib_Primavera.Model.Artigo> GetAcessórios(string acessorio)
+        {
+            return Lib_Primavera.PriIntegration.GetAcessórios(acessorio);
+        }
     }
 }

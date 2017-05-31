@@ -60,12 +60,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="bicycles.php">PREMIMUN SERIES</a></li>												
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
+						  <li class="dropdown1"><a href="suasCompras.php">Área Cliente</a>
 							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
+									<li><a href="suasCompras.php">CHAINS</a></li>
+									<li><a href="suasCompras.php">TUBES</a></li>
+									<li><a href="suasCompras.php">TIRES</a></li>
+									<li><a href="suasCompras.php">DISC BREAKS</a></li>
 							  </ul>
 						 </li>      
 						 <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
@@ -91,16 +91,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  </div> 				 
 </div>
 <!--/banner-->
-<div class="parts">
+<div class="Área Cliente">
 	 <div class="container">
 		 <h2>BIKE-ACCESSORIES</h2>
-		 <div class="bike-parts-sec">
-		 <div class="bike-parts acces">
+		 <div class="bike-Área Cliente-sec">
+		 <div class="bike-Área Cliente acces">
 			 <div class="top">
 				 <ul>
 					 <li><a href="indexRegistado.php">home</a></li>
 					 <li><a href="#"> / </a></li>
-					 <li><a href="#">parts</a></li>
+					 <li><a href="#">Área Cliente</a></li>
 				 </ul>				 
 			 </div>
 			 <div class="bike-apparels">
@@ -110,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               foreach ($array as $key => $value) {?>
                              <form action="cartUpdate.php" method="post">
                              
-                             <div class="parts1">
+                             <div class="Área Cliente1">
 					 <a href="single.php?cod=<?=print_r($array[$key]['CodArtigo']) ?>"><div class="part-sec">					 
                                                  <img src=<?php print_r($array[$key]['imagem'])?> alt=""/>
 						 <div class="part-info">
@@ -176,7 +176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Foks, Suspensions (48)</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Breaks and Pedals (45)</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Tires,Tubes,Wheels (45)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Serevice Parts(12)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Serevice Área Cliente(12)</label>
 						 </div>
 					 </div>
 					 <h4>Apparels</h4>
@@ -238,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="ftr-menu">
 			 <ul>
 				 <li><a href="bicycles.php">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
+				 <li><a href="suasCompras.php">Área Cliente</a></li>
 				 <li><a href="accessories.php">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
 			 </ul>

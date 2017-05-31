@@ -523,11 +523,11 @@ select{
 .singlespeed-sec,.road-sec{
 	margin-top:2em;
 }
-/*-parts-*/
-.parts{
+/*-Área Cliente-*/
+.Área Cliente{
 	padding:2em 0;
 }
-.parts h2{
+.Área Cliente h2{
 	color:#000;
 	font-size:2.2em;
 	font-weight:500;
@@ -711,11 +711,11 @@ margin-bottom: 2em;
 .checkbox{
 	margin-top:0;
 }
-/*--bike-parts--*/
-.bike-parts-sec{
+/*--bike-Área Cliente--*/
+.bike-Área Cliente-sec{
 	margin-top:3em;
 }
-.bike-parts{
+.bike-Área Cliente{
 	float:right;
 	width:78%;
 }
@@ -792,7 +792,7 @@ a.qck:hover{
 	background:#fcff19;
 	color:#000;
 }
-.parts2,.parts3,.parts4{
+.Área Cliente2,.Área Cliente3,.Área Cliente4{
 	margin-top:3em;
 }
 /*--404-page--*/
@@ -1453,7 +1453,7 @@ select {
   height: 154px;
   padding: 15px;
 }
-.parts h2 {
+.Área Cliente h2 {
   font-size: 1.8em;
 }
 .error-head h1 {
@@ -1598,7 +1598,7 @@ select {
 .rsidebar {
   width: 25%;
 }
-.bike-parts {
+.bike-Área Cliente {
   width: 71%;
 }
 .part-sec {
@@ -1768,7 +1768,7 @@ a.store {
 .bikes {
   padding: 2em 0 2em 0;
 }
-.parts1 {
+.Área Cliente1 {
   margin-top: 10px;
 }
 .part-sec img {
@@ -1785,10 +1785,10 @@ a.add-cart {
 a.qck{
 	font-size:0.9em;
 }
-.parts h2 {
+.Área Cliente h2 {
   font-size: 1.5em;
 }
-.bike-parts-sec {
+.bike-Área Cliente-sec {
   margin-top: 2em;
 }
 .details-left-info {
@@ -1934,7 +1934,7 @@ select {
 .rsidebar {
   width: 100%;
 }
-.bike-parts {
+.bike-Área Cliente {
   width: 100%;
 }
 .part-sec:nth-child(18){
@@ -1968,7 +1968,7 @@ display:block;
 .bottom-line{
 	border-bottom:0;
 }
-.parts h2 {
+.Área Cliente h2 {
   font-size: 1.3em;
 }
 .error-head h1 {

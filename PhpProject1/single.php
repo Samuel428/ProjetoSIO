@@ -61,12 +61,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="bicycles.php">PREMIMUN SERIES</a></li>												
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="parts.html">PARTS</a>
+						  <li class="dropdown1"><a href="suasCompras.php">Área Cliente</a>
 							 <ul class="dropdown2">
-									<li><a href="parts.html">CHAINS</a></li>
-									<li><a href="parts.html">TUBES</a></li>
-									<li><a href="parts.html">TIRES</a></li>
-									<li><a href="parts.html">DISC BREAKS</a></li>
+									<li><a href="suasCompras.php">CHAINS</a></li>
+									<li><a href="suasCompras.php">TUBES</a></li>
+									<li><a href="suasCompras.php">TIRES</a></li>
+									<li><a href="suasCompras.php">DISC BREAKS</a></li>
 							  </ul>
 						 </li>      
 						 <li class="dropdown1"><a href="accessories.php">ACCESSORIES</a>
@@ -124,6 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $arrays=$manager->getartigo(filter_input(INPUT_GET,'cod' ,FILTER_SANITIZE_SPECIAL_CHARS));
                 $marca=$arrays['Marca'];
                 $preco=$arrays['preco'];
+                $imagem=$arrays['imagem'];               
 //              foreach ($arrays as $key => $value) {
 //                  
 //              }
@@ -133,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src="images/m1.jpg" class="img-responsive" />
+									<img class="etalage_thumb_image" src="<?=$imagem ?>" class="img-responsive" />
 									<img class="etalage_source_image" src="images/m1.jpg" class="img-responsive" title="" />
 								</a>
 							</li>
@@ -152,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 						</div>
 					 </div>
-                                                
+
 					 <div class="details-left-info">
 							<h3><?php print_r($marca);?></h3>
 								<h4></h4>
@@ -162,10 +163,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="length" href="#">XS</a>
 							<a class="length" href="#">M</a>
 							<a class="length" href="#">S</a>
+                                                        <form action="cartUpdate.php" method="post">
 							<div class="btn_form">
-								<a href="cart.php">buy now</a>
-								<a href="cart.php">ADD TO CART</a>
-							</div>
+                                                            <input type="hidden" name="type" value="add"/>
+                         <input type="hidden" name="product_qty" value="1"/>
+                                                            <input type="hidden" name="cod" value="<?=$arrays['CodArtigo'] ?>"/>
+                                                                <button type="submit"><a href="cartUpdate.php?cod=<?=$arrays['CodArtigo'] ?>">ADD TO CART</a></button>
+							</div></form>
 							<div class="bike-type">
 							<p>TYPE  ::<a href="#">MOUNTAIN BIKE</a></p>
 							<p>BRAND  ::<a href="#"><?php print_r($marca);?></a></p>
@@ -243,7 +247,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="ftr-menu">
 			 <ul>
 				 <li><a href="bicycles.php">BICYCLES</a></li>
-				 <li><a href="parts.html">PARTS</a></li>
+				 <li><a href="suasCompras.php">Área Cliente</a></li>
 				 <li><a href="accessories.php">ACCESSORIES</a></li>
 				 <li><a href="404.html">EXTRAS</a></li>
 			 </ul>

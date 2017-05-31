@@ -1,19 +1,14 @@
 <?php
-
-//$filePath = "http://localhost:49627/api/Artigo";
-//                        $string = file_get_contents($filePath);
-//                        if ($string == null || $string == FALSE) {
-//                            echo '$id';
-//                            ?>
-                            //<?php
-//                        } else {
-//                            $json_a = json_decode($string, true);
-//                            
-//                            print_r($json_a);
-//                        }
-//                        
-//                        
+                       
 require_once './Manager/getData.php';
-$manager=new getData();$s=$manager->getartigo("C01");
-print_r($s=$manager->getartigo("C01"));
-print_r($s['Marca']);
+$manager=new getData();
+//$s=$manager->getartigo("C01");
+//print_r($s=$manager->getartigo("C01"));
+//print_r($s['Marca']);
+$aa=$manager->getfaturas("Admin");
+print_r($aa[0]['id']);
+$z=$aa[0]['id'];
+$as=str_replace(array( '{', '}' ), '', $z);
+print_r($as);
+$aaa=$manager->getlinha($as);
+print_r($aaa);
